@@ -1,0 +1,1961 @@
+{
+  "format": "vngine.project",
+  "version": 1,
+  "title": "Last Dish Effort",
+  "titleNodeId": "node_title",
+  "startNodeId": "node_1a_woman_at_restaurant",
+  "nodes": [
+    {
+      "id": "node_title",
+      "kind": "title",
+      "title": "Title Screen",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "titleScreen": {
+        "displayTitle": "Last Dish Effort",
+        "subtitle": "Adapted from Twine branch map and path_1 rough script"
+      },
+      "phrases": []
+    },
+    {
+      "id": "node_1a_woman_at_restaurant",
+      "kind": "story",
+      "title": "1A. WOMAN AT RESTAURANT",
+      "position": {
+        "x": 398.6666666666667,
+        "y": 902.8333333333333
+      },
+      "phrases": [
+        {
+          "id": "phrase_001_heavy_rain_beats_d",
+          "speaker": "Narrator",
+          "text": "Heavy rain beats down on empty streets as lights from businesses that probably should have closed an hour ago reflect in the shallow pools along the curb. Winter's last chill clings to the spring rain.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_002_in_retrospect_rese",
+          "speaker": "Narrator",
+          "text": "In retrospect, reservations at [restaurant] were overkill.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_003_reservations_for_t",
+          "speaker": "Narrator",
+          "text": "Reservations for two were *definitely* overkill.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_004_that_part_had_been",
+          "speaker": "Narrator",
+          "text": "That part had been your ex's idea.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_005_he_wanted_a_second",
+          "speaker": "Narrator",
+          "text": "He wanted a second chance. Todd had never been easy to reduce to a villain. He could be thoughtless. Inconsistent. Infuriating in ways that seemed to leave *you* apologizing for being hurt. But he could also look at you like you were the only person in the room, like choosing you was the easiest thing he'd ever done.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_006_that_look_had_been",
+          "speaker": "Narrator",
+          "text": "That look had been enough to keep you waiting through a lot.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_007_tonight_it_had_bee",
+          "speaker": "Narrator",
+          "text": "Tonight it had been enough to get you sitting alone with a half-eaten meal cooling in front of you.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_008_nothing",
+          "speaker": "Narrator",
+          "text": "...nothing.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_009_well_nothing_excep",
+          "speaker": "Narrator",
+          "text": "Well, nothing except a half-empty wine glass, and a plate you can't bring yourself to care about. And some messages from Sammy about her party tomorrow.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_010_the_waiter_approac",
+          "speaker": "Narrator",
+          "text": "The waiter approaches, and you realize how late it's gotten.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_011_he_has_gentle_eyes",
+          "speaker": "Narrator",
+          "text": "He has gentle eyes and a soft smile. You've tried not to notice- the two of you have been the only people in the restaurant for at least several hours.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_012_ah_i_m_so_sorry_yo",
+          "speaker": "Diana",
+          "text": "Ah... I'm so sorry. You're probably getting ready to close.\nI promise the food was good. I've just been a little... distracted.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_013_technically_we_clo",
+          "speaker": "Michael",
+          "text": "Technically, we closed about thirty minutes ago.\nYou looked like you were waiting for someone... and like you needed a bit of space.\nBut... if you don't mind...",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_014_you_brace_for_admo",
+          "speaker": "Narrator",
+          "text": "You brace for admonishment, or polite pressure, or the familiar embarrassment of being gently moved along. It would be entirely reasonable.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_015_i_m_starting_to_fe",
+          "speaker": "Michael",
+          "text": "...I'm starting to feel a little invested.\nWho are we waiting for?",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_016_my_ex_i_broke_up_w",
+          "speaker": "Diana",
+          "text": "...my ex.\nI broke up with him a couple months back. One day he'd make me feel like I was his whole world, and the next I'd be checking my phone every fifteen minutes wondering if I'd imagined half our relationship.\nIt looks like he hasn't changed.\n...sorry. I... shouldn't be unloading on you.\nI should go.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_017_the_waiter_waves_o",
+          "speaker": "Narrator",
+          "text": "The waiter waves off your concern.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_018_stay_as_long_as_yo",
+          "speaker": "Michael",
+          "text": "Stay as long as you want, ma'am- the storm is getting worse, and I don't have anywhere else to be tonight.\nIt sounds like you're having a rough one- your meal is on the house tonight.\nI can throw in a bit of dessert?",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_019_your_eyebrow_rises",
+          "speaker": "Narrator",
+          "text": "Your eyebrow rises despite yourself. He notices and fills the silence without missing a beat.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_020_if_the_tiramisu_do",
+          "speaker": "Michael",
+          "text": "If the tiramisu doesn't fix your love life, we do have a backup chocolate cake.\nYou'd be surprised what a good dessert can do.\nLast week I watched a first date play out over our strawberry shortcake. Ended with them going home together. True love, I think. Destined for marriage.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_021_i_don_t_think_i_wa",
+          "speaker": "Diana",
+          "text": "I don't think I want to reinvent my whole life over dessert.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_022_fair_but_we_all_de",
+          "speaker": "Michael",
+          "text": "Fair- but we all deserve a little treat now and then.\nEspecially on nights like tonight.\nActually... give me one second. I'll be right back.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_023_there_s_an_admirab",
+          "speaker": "Narrator",
+          "text": "There's an admirable sort of earnestness to him. You watch as he heads to the kitchen on some sort of mission.",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1a_woman_at_restaurant_1",
+              "text": "Leave before dessert",
+              "targetNodeId": "node_1b_leave_restaurant_walk_into_rain",
+              "conditions": []
+            },
+            {
+              "id": "choice_1a_woman_at_restaurant_2",
+              "text": "Stay and flirt",
+              "targetNodeId": "node_2b_stay_at_restaurant_flirt",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1b_leave_restaurant_walk_into_rain",
+      "kind": "story",
+      "title": "1B. LEAVE RESTAURANT; WALK INTO RAIN",
+      "position": {
+        "x": 596.9999999999999,
+        "y": 900.4999999999999
+      },
+      "phrases": [
+        {
+          "id": "phrase_001_left_alone_your_ap",
+          "speaker": "Narrator",
+          "text": "Left alone, your apprehension rises as quickly as your relief. He seems nice... but a part of you can't help but feel like he's just trying to get into your pants.",
+          "effects": [
+            {
+              "id": "effect_1b_leave_restaurant_walk_into_rain",
+              "key": "restaurant_choice",
+              "operation": "set",
+              "value": "left"
+            }
+          ],
+          "choices": []
+        },
+        {
+          "id": "phrase_002_not_that_that_s_th",
+          "speaker": "Narrator",
+          "text": "Not that that's the worst thing that could happen.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_003_not_tonight",
+          "speaker": "Narrator",
+          "text": "Not tonight.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_004_left_alone_at_your",
+          "speaker": "Narrator",
+          "text": "Left alone at your table, old emotions begin to stew. Todd made you feel that way too, early on. But two years of Todd's excuses, and two years of feeling invisible, bubble up. Something inside you tells you that you need to get out of there. It's almost a panic.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_005_still_nothing_fuck",
+          "speaker": "Narrator",
+          "text": "Still nothing. Fuck.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_006_the_rain_has_picke",
+          "speaker": "Narrator",
+          "text": "The rain has picked up- you're drenched within moments. Your blouse clings to your skin. Water beads on your lashes. The air feels warm with the promise of life, but the rain itself is cold. A shiver runs through you.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_007_todd_s_silence_ton",
+          "speaker": "Narrator",
+          "text": "Todd's silence tonight probably wasn't malicious, but that almost makes it worse. Malice would've required intention. And this was just more of the same.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_008_there_s_always_a_r",
+          "speaker": "Narrator",
+          "text": "There's always a reason. Maybe he got caught in some fresh emergency, some new chaos, some mess dramatic enough that he truly lost track of time and only noticed when it was far too late.\nMaybe he's at home right now, staring at his phone- realizing exactly where the evening went wrong.\nBut it doesn't matter.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_009_your_mind_moves_th",
+          "speaker": "Narrator",
+          "text": "Your mind moves through all of the versions of tonight you let yourself picture.\nTodd showing up damp from the rain, breathless and apologetic.\nTodd being sincere enough that the rest of the restaurant disappears and it was just you and him.\nTodd finally saying something that closes the distance.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_010_it_feels_stupid_th",
+          "speaker": "Narrator",
+          "text": "It feels stupid. There are plenty of people who would've been there for you, but for some reason... that empty chair is all that matters.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_011_rainwater_runs_dow",
+          "speaker": "Narrator",
+          "text": "Rainwater runs down the back of your neck.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_012_you_could_keep_wal",
+          "speaker": "Narrator",
+          "text": "You could keep walking until the feeling burns off. You can call a ride and get yourself somewhere dry.\nYou could keep telling yourself this is closure. Maybe it'll be true if you say it enough times.",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1b_leave_restaurant_walk_into_rain_1",
+              "text": "Keep walking",
+              "targetNodeId": "node_3c_continue_walking",
+              "conditions": []
+            },
+            {
+              "id": "choice_1b_leave_restaurant_walk_into_rain_2",
+              "text": "Call Uber / go back for purse",
+              "targetNodeId": "node_1c_go_back_to_restaurant",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_2b_stay_at_restaurant_flirt",
+      "kind": "story",
+      "title": "2B. STAY AT RESTAURANT; FLIRT",
+      "position": {
+        "x": 601,
+        "y": 1097.8333333333335
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_2b_stay_at_restaurant_flirt",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"2B. STAY AT RESTAURANT; FLIRT\".",
+          "effects": [
+            {
+              "id": "effect_2b_stay_at_restaurant_flirt",
+              "key": "restaurant_choice",
+              "operation": "set",
+              "value": "stayed"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice_2b_stay_at_restaurant_flirt_1",
+              "text": "Eat dessert and wait",
+              "targetNodeId": "node_6d_eat_dessert_and_wait",
+              "conditions": []
+            },
+            {
+              "id": "choice_2b_stay_at_restaurant_flirt_2",
+              "text": "Go to the kitchen",
+              "targetNodeId": "node_2c_go_to_kitchen",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_3c_continue_walking",
+      "kind": "story",
+      "title": "3C. CONTINUE WALKING",
+      "position": {
+        "x": 801.6666666666666,
+        "y": 701.1666666666666
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_3c_continue_walking",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"3C. CONTINUE WALKING\".",
+          "effects": [
+            {
+              "id": "effect_3c_continue_walking",
+              "key": "rain_choice",
+              "operation": "set",
+              "value": "kept_walking"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice_3c_continue_walking_1",
+              "text": "Continue",
+              "targetNodeId": "node_3j_end_alone_at_apartment_sad",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1c_go_back_to_restaurant",
+      "kind": "story",
+      "title": "1C. GO BACK TO RESTAURANT",
+      "position": {
+        "x": 799.6666666666666,
+        "y": 903.8333333333333
+      },
+      "phrases": [
+        {
+          "id": "phrase_001_you_gave_todd_a_se",
+          "speaker": "Narrator",
+          "text": "You gave Todd a second chance. That was the last thing you owed the version of yourself that fell in love with him two years ago.",
+          "effects": [
+            {
+              "id": "effect_1c_go_back_to_restaurant",
+              "key": "rain_choice",
+              "operation": "set",
+              "value": "returned_for_purse"
+            }
+          ],
+          "choices": []
+        },
+        {
+          "id": "phrase_002_this_version_of_yo",
+          "speaker": "Narrator",
+          "text": "This version of you deserves to get someplace warm.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_003_you_reach_for_your",
+          "speaker": "Narrator",
+          "text": "You reach for your phone.\nThen your purse.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_004_fuck_in_your_panic",
+          "speaker": "Narrator",
+          "text": "Fuck. In your panic, you must have-",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_005_the_restaurant_is_",
+          "speaker": "Narrator",
+          "text": "The restaurant is dark by the time you make it back.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_006_soaked_to_the_bone",
+          "speaker": "Narrator",
+          "text": "Soaked to the bone, you knock on the door with one last desperate hope that someone is still there. You really do not want to walk home through this mess.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_007_even_standing_stil",
+          "speaker": "Narrator",
+          "text": "Even standing still, your heart is pounding almost as hard as the rain drumming against the overhang.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_008_you_take_a_breath_",
+          "speaker": "Narrator",
+          "text": "You take a breath. Then another.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_009_you_wait_you_hope_",
+          "speaker": "Narrator",
+          "text": "You wait. You hope.\nThe entire evening has been a long wait, without reward.\nFuck.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_010_all_you_wanted_was",
+          "speaker": "Narrator",
+          "text": "All you wanted was warmth. To be seen. To be heard.\nTo be chosen.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_011_disconsolate_you_t",
+          "speaker": "Narrator",
+          "text": "Disconsolate, you turn to walk away-\nThe light turns on.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_012_holy_shit_are_you_",
+          "speaker": "Michael",
+          "text": "Holy shit... are you okay?\nCome inside and dry off in the kitchen, okay?\nIt's freezing out here. I was starting to wonder if something happened to you.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_013_yeah_i_was_just_wa",
+          "speaker": "Diana",
+          "text": "Yeah... I was just walking.\nI didn't realize I'd left my things behind until I went to call a ride.",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1c_go_back_to_restaurant_1",
+              "text": "Get purse and call Uber",
+              "targetNodeId": "node_4d_get_purse_and_call_uber",
+              "conditions": []
+            },
+            {
+              "id": "choice_1c_go_back_to_restaurant_2",
+              "text": "Warm up in the kitchen",
+              "targetNodeId": "node_1d_warm_up_in_kitchen_wet_kiss_in_kitchen",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_6d_eat_dessert_and_wait",
+      "kind": "story",
+      "title": "6D. EAT DESSERT AND WAIT",
+      "position": {
+        "x": 999,
+        "y": 1500.4999999999998
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_6d_eat_dessert_and_wait",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"6D. EAT DESSERT AND WAIT\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_6d_eat_dessert_and_wait_1",
+              "text": "Continue",
+              "targetNodeId": "node_1g_given_a_ride",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_2c_go_to_kitchen",
+      "kind": "story",
+      "title": "2C. GO TO KITCHEN",
+      "position": {
+        "x": 801,
+        "y": 1099.8333333333335
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_2c_go_to_kitchen",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"2C. GO TO KITCHEN\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_2c_go_to_kitchen_1",
+              "text": "LEAN INTO KITCHEN KISS",
+              "targetNodeId": "node_2d_lean_into_kitchen_kiss",
+              "conditions": []
+            },
+            {
+              "id": "choice_2c_go_to_kitchen_2",
+              "text": "RESTRAINT IN KITCHEN",
+              "targetNodeId": "node_5d_restraint_in_kitchen",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_2d_lean_into_kitchen_kiss",
+      "kind": "story",
+      "title": "2D. LEAN INTO KITCHEN KISS",
+      "position": {
+        "x": 1000.9999999999999,
+        "y": 1105.5
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_2d_lean_into_kitchen_kiss",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"2D. LEAN INTO KITCHEN KISS\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_2d_lean_into_kitchen_kiss_1",
+              "text": "Continue",
+              "targetNodeId": "node_1f_kitchen_sex_scene",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_5d_restraint_in_kitchen",
+      "kind": "story",
+      "title": "5D. RESTRAINT IN KITCHEN",
+      "position": {
+        "x": 997.6666666666665,
+        "y": 1301.5
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_5d_restraint_in_kitchen",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"5D. RESTRAINT IN KITCHEN\".",
+          "effects": [
+            {
+              "id": "effect_5d_restraint_in_kitchen",
+              "key": "waiter_intimacy",
+              "operation": "set",
+              "value": "restrained"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice_5d_restraint_in_kitchen_1",
+              "text": "Continue",
+              "targetNodeId": "node_1g_given_a_ride",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1f_kitchen_sex_scene",
+      "kind": "story",
+      "title": "1F. KITCHEN SEX SCENE",
+      "position": {
+        "x": 1400.666666666667,
+        "y": 901.1666666666667
+      },
+      "phrases": [
+        {
+          "id": "phrase_001_so_bring_young_wom",
+          "speaker": "Diana",
+          "text": "So... bring young women back here often?",
+          "effects": [
+            {
+              "id": "effect_1f_kitchen_sex_scene",
+              "key": "waiter_intimacy",
+              "operation": "set",
+              "value": "kitchen"
+            }
+          ],
+          "choices": []
+        },
+        {
+          "id": "phrase_002_he_chuckles_softly",
+          "speaker": "Narrator",
+          "text": "He chuckles softly at the thought, and you can't help but feel a kind of innocence behind it.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_003_you_got_me_this_wa",
+          "speaker": "Michael",
+          "text": "You got me. This was all part of my diabolical plan to make sure you didn't get hypothermia.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_004_truly_monstrous_ho",
+          "speaker": "Diana",
+          "text": "Truly monstrous.\nHow ever will your reputation recover?",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_005_i_hear_that_a_lot_",
+          "speaker": "Michael",
+          "text": "I hear that a lot. Not usually from the ladies, though. Mostly from my younger siblings when I twist their arms into picking up extra shifts.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_006_wait_you_run_this_",
+          "speaker": "Diana",
+          "text": "Wait... you run this place?",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_007_close_enough_that_",
+          "speaker": "Michael",
+          "text": "Close enough that I can get creative about how I define 'full service'.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_008_that_phrase_keeps_",
+          "speaker": "Diana",
+          "text": "That phrase keeps sounding dirtier every time you say it.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_009_that_s_on_you_i_wa",
+          "speaker": "Michael",
+          "text": "That's on you.\n*I* was talking about hospitality.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_010_were_you",
+          "speaker": "Diana",
+          "text": "Were you?",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_011_mostly",
+          "speaker": "Michael",
+          "text": "...\n...Mostly.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_012_i_feel_like_i_shou",
+          "speaker": "Diana",
+          "text": "I feel like I should make some sort of joke about leaving you a tip, but I can't think of anything good.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_013_well_you_have_a_ca",
+          "speaker": "Michael",
+          "text": "Well, you have a car ride to think of something. What's your address?",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_014_something_about_th",
+          "speaker": "Narrator",
+          "text": "Something about the way he says it sends another flush of warmth through your body. You can't help but slowly smile.",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1f_kitchen_sex_scene_1",
+              "text": "Continue",
+              "targetNodeId": "node_1g_given_a_ride",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_4d_get_purse_and_call_uber",
+      "kind": "story",
+      "title": "4D. GET PURSE AND CALL UBER",
+      "position": {
+        "x": 1003.9999999999999,
+        "y": 696.8333333333333
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_4d_get_purse_and_call_uber",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"4D. GET PURSE AND CALL UBER\".",
+          "effects": [
+            {
+              "id": "effect_4d_get_purse_and_call_uber",
+              "key": "chapter1_outcome",
+              "operation": "set",
+              "value": "happy_alone"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice_4d_get_purse_and_call_uber_1",
+              "text": "Continue",
+              "targetNodeId": "node_4j_end_alone_at_apartment_happy",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1d_warm_up_in_kitchen_wet_kiss_in_kitchen",
+      "kind": "story",
+      "title": "1D. WARM UP IN KITCHEN; WET KISS IN KITCHEN",
+      "position": {
+        "x": 1000.9999999999999,
+        "y": 902.1666666666666
+      },
+      "phrases": [
+        {
+          "id": "phrase_001_c_mon_let_s_get_yo",
+          "speaker": "Michael",
+          "text": "C'mon. Let's get you warmed up. Your stuff is in the back.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_002_the_kitchen_is_sti",
+          "speaker": "Narrator",
+          "text": "The kitchen is still warm from the day. It gets warmer as he starts bringing it back to life.\nHis gentle eyes glance over you, more fully now than they did before.\nYou can tell that he's mapping things out in his head.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_003_i_can_give_you_a_r",
+          "speaker": "Michael",
+          "text": "I can give you a ride back to your place after you've warmed up a bit, if you'd like.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_004_a_flush_of_heat_ru",
+          "speaker": "Narrator",
+          "text": "A flush of heat rushes through you as you start mapping things out in your head too.\nThoughts start to intrude... of things that you'd like.\nSomething deep down grows very warm.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_005_you_re_not_sure_ho",
+          "speaker": "Narrator",
+          "text": "You're not sure how loaded the invitation was. It was delivered without presumption.\nBut part of you hopes...",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1d_warm_up_in_kitchen_wet_kiss_in_kitchen_1",
+              "text": "Lean into it",
+              "targetNodeId": "node_1e_lean_into_wet_kitchen_kiss",
+              "conditions": []
+            },
+            {
+              "id": "choice_1d_warm_up_in_kitchen_wet_kiss_in_kitchen_2",
+              "text": "Restraint",
+              "targetNodeId": "node_7e_wet_restraint_in_kitchen",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_3j_end_alone_at_apartment_sad",
+      "kind": "story",
+      "title": "3J. END ALONE AT APARTMENT; SAD",
+      "position": {
+        "x": 2201.2665201822915,
+        "y": 496.76663462320965
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_3j_end_alone_at_apartment_sad",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"3J. END ALONE AT APARTMENT; SAD\".",
+          "effects": [
+            {
+              "id": "effect_3j_end_alone_at_apartment_sad",
+              "key": "chapter1_outcome",
+              "operation": "set",
+              "value": "sad_alone"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice_3j_end_alone_at_apartment_sad_1",
+              "text": "Continue",
+              "targetNodeId": "node_2a_wake_up_alone_at_her_apartment_ex_knocks",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_4j_end_alone_at_apartment_happy",
+      "kind": "story",
+      "title": "4J. END ALONE AT APARTMENT; HAPPY",
+      "position": {
+        "x": 2200.333333333333,
+        "y": 699.5000000000001
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_4j_end_alone_at_apartment_happy",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"4J. END ALONE AT APARTMENT; HAPPY\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_4j_end_alone_at_apartment_happy_1",
+              "text": "Continue",
+              "targetNodeId": "node_2a_wake_up_alone_at_her_apartment_ex_knocks",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1e_lean_into_wet_kitchen_kiss",
+      "kind": "story",
+      "title": "1E. LEAN INTO WET KITCHEN KISS",
+      "position": {
+        "x": 1202.9999186197917,
+        "y": 900.4999796549479
+      },
+      "phrases": [
+        {
+          "id": "phrase_001_your_thoughts_shou",
+          "speaker": "Narrator",
+          "text": "Your thoughts should probably be more complicated than they are. But they're not complicated at all.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_002_relief_attraction_",
+          "speaker": "Narrator",
+          "text": "Relief. Attraction. Impulse. Safety.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_003_you_set_the_warm_c",
+          "speaker": "Narrator",
+          "text": "You set the warm cup down and lean into him. As you lean in, your clothes cling to him as much as they do to you.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_004_your_breasts_press",
+          "speaker": "Narrator",
+          "text": "Your breasts press against him. As the kiss deepens, his shirt soaks through.\nHe leans back into you.\nA fiery warmth spreads throughout your body.\nYou want him.",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1e_lean_into_wet_kitchen_kiss_1",
+              "text": "Continue",
+              "targetNodeId": "node_1f_kitchen_sex_scene",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_7e_wet_restraint_in_kitchen",
+      "kind": "story",
+      "title": "7E. WET RESTRAINT IN KITCHEN",
+      "position": {
+        "x": 1205.6666666666663,
+        "y": 702.8333333333335
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_7e_wet_restraint_in_kitchen",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"7E. WET RESTRAINT IN KITCHEN\".",
+          "effects": [
+            {
+              "id": "effect_7e_wet_restraint_in_kitchen",
+              "key": "waiter_intimacy",
+              "operation": "set",
+              "value": "wet_restrained"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice_7e_wet_restraint_in_kitchen_1",
+              "text": "Continue",
+              "targetNodeId": "node_1g_given_a_ride",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1g_given_a_ride",
+      "kind": "story",
+      "title": "1G. GIVEN A RIDE",
+      "position": {
+        "x": 1609.3333333333335,
+        "y": 899.8333333333334
+      },
+      "phrases": [
+        {
+          "id": "phrase_001_so_what_s_the_stor",
+          "speaker": "Diana",
+          "text": "So what's the story about you and this place? Just picking up a late shift?",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_002_ah_it_s_actually_m",
+          "speaker": "Michael",
+          "text": "Ah... it's actually my dad's place. He's been having some health problems, so I've sort of been stepping up.\nIt's been taking more out of me than I realized. I needed tonight.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_003_sounds_like_it_s_b",
+          "speaker": "Diana",
+          "text": "Sounds like it's been a lot.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_004_it_s_mostly_fine_i",
+          "speaker": "Michael",
+          "text": "It's mostly fine, it just adds up.\nIt's easy to feel overlooked or taken for granted, y'know?",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_005_you_know",
+          "speaker": "Narrator",
+          "text": "You know.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_006_sorry_i_shouldn_t_",
+          "speaker": "Michael",
+          "text": "Sorry... I shouldn't be unloading on you...",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_007_we_all_need_that_f",
+          "speaker": "Diana",
+          "text": "We all need that from time to time...\n... and I'm guessing you don't do that often.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_008_what_unload_on_wom",
+          "speaker": "Michael",
+          "text": "What? Unload on women I just met?",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_009_he_says_it_with_en",
+          "speaker": "Narrator",
+          "text": "He says it with enough innocence that you're almost convinced he doesn't realize what he just said.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_010_he_smiles_quietly_",
+          "speaker": "Narrator",
+          "text": "He smiles quietly as the two of you walk.",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1g_given_a_ride_1",
+              "text": "Let him drive you home",
+              "targetNodeId": "node_1h_driven_to_her_apartment",
+              "conditions": []
+            },
+            {
+              "id": "choice_1g_given_a_ride_2",
+              "text": "Go to his apartment",
+              "targetNodeId": "node_8h_driven_to_his_apartment_sex_scene",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_9i_restraint_in_car_say_goodnight",
+      "kind": "story",
+      "title": "9I. RESTRAINT IN CAR; SAY GOODNIGHT",
+      "position": {
+        "x": 1991.6666666666667,
+        "y": 698.1666666666667
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_9i_restraint_in_car_say_goodnight",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"9I. RESTRAINT IN CAR; SAY GOODNIGHT\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_9i_restraint_in_car_say_goodnight_1",
+              "text": "Continue",
+              "targetNodeId": "node_4j_end_alone_at_apartment_happy",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1i_invite_up_apartment_sex_scene",
+      "kind": "story",
+      "title": "1I. INVITE UP; APARTMENT SEX SCENE",
+      "position": {
+        "x": 2000.3333333333335,
+        "y": 902.1666666666666
+      },
+      "phrases": [
+        {
+          "id": "phrase_001_i_don_t_want_you_t",
+          "speaker": "Michael",
+          "text": "I don't want you to invite me up because somebody else made you feel small...",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_002_what_if_i_m_inviti",
+          "speaker": "Diana",
+          "text": "What if I'm inviting you up because you make me feel the opposite?",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_003_for_once_he_doesn_",
+          "speaker": "Narrator",
+          "text": "For once, he doesn't answer quickly.\nHe looks at you the way he did earlier- careful and intent, like he understands the shape of what he's being handed and doesn't want to crush it by grabbing too fast.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_004_then_i_think_i_d_l",
+          "speaker": "Michael",
+          "text": "Then I think I'd like to come upstairs.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_005_the_stairs_up_to_y",
+          "speaker": "Narrator",
+          "text": "The stairs up to your apartment are familiar, but you almost trip on them as you go up them.\nThoughts of what's about to happen flood your mind.\nThe door to your apartment clicks open.\nYou get the feeling that he's the kind of person who likes to take the room in when he walks into it- but he's far too focused on the shape of your body.\nThe feel of your body. Your breasts cupped in his hands, your hips unburdened by clothes and pressed against him.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_006_no_more_waiting",
+          "speaker": "Narrator",
+          "text": "No more waiting.",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1i_invite_up_apartment_sex_scene_1",
+              "text": "Continue",
+              "targetNodeId": "node_1j_end_at_her_apartment_with_waiter",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1j_end_at_her_apartment_with_waiter",
+      "kind": "story",
+      "title": "1J. END AT HER APARTMENT WITH WAITER",
+      "position": {
+        "x": 2196,
+        "y": 900.8333333333334
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_1j_end_at_her_apartment_with_waiter",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"1J. END AT HER APARTMENT WITH WAITER\".",
+          "effects": [
+            {
+              "id": "effect_1j_end_at_her_apartment_with_waiter",
+              "key": "chapter1_outcome",
+              "operation": "set",
+              "value": "waiter_her_apartment"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice_1j_end_at_her_apartment_with_waiter_1",
+              "text": "Continue",
+              "targetNodeId": "node_1a_wake_up_with_waiter_at_her_apartment",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1h_driven_to_her_apartment",
+      "kind": "story",
+      "title": "1H. DRIVEN TO HER APARTMENT",
+      "position": {
+        "x": 1796,
+        "y": 898.1666666666667
+      },
+      "phrases": [
+        {
+          "id": "phrase_001_at_some_point_the_",
+          "speaker": "Narrator",
+          "text": "At some point the chilled rain stops, leaving only puddles and warm humid air.\nThe pavement almost steams. The whole street feels fuller than it did before, as if the city had quietly decided to start breathing again.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_002_the_car_ride_is_mo",
+          "speaker": "Narrator",
+          "text": "The car ride is mostly filled with a warm silence. A part of you knows that if you say anything right now, it will come out as too honest. Too honest about who you are, too honest about what you want.\nThe feeling seems to be mutual.\nThere is a warm apprehension about what comes next. The uncertainty almost feels uplifting.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_003_his_hand_brushes_y",
+          "speaker": "Narrator",
+          "text": "His hand brushes yours between the seats before his mouth does- tentative and slow, as if checking if this is what you want.\nHis lips meet yours- warm and careful at first, then sure enough to make heat unfurl low in your body. You lean into the kiss.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_004_if_you_invite_him_",
+          "speaker": "Narrator",
+          "text": "If you invite him up, you know what it means. The warmth inside you grows fiery and barely contained. Your skin grows flush... barely containing the escalating hunger.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_005_you_don_t_have_to_",
+          "speaker": "Michael",
+          "text": "You don't have to decide anything right now.\nI mean it- there's no pressure.",
+          "effects": [],
+          "choices": []
+        },
+        {
+          "id": "phrase_006_he_means_well_but_",
+          "speaker": "Narrator",
+          "text": "He means well, but he's wrong- the pressure wells up inside of you, desperate for release. Desperate to feel him pressed against you.\nYour body has been waiting for this moment.",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1h_driven_to_her_apartment_1",
+              "text": "Say goodnight",
+              "targetNodeId": "node_9i_restraint_in_car_say_goodnight",
+              "conditions": []
+            },
+            {
+              "id": "choice_1h_driven_to_her_apartment_2",
+              "text": "Invite him up",
+              "targetNodeId": "node_1i_invite_up_apartment_sex_scene",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_8h_driven_to_his_apartment_sex_scene",
+      "kind": "story",
+      "title": "8H. DRIVEN TO HIS APARTMENT; SEX SCENE",
+      "position": {
+        "x": 1801,
+        "y": 1101.5
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_8h_driven_to_his_apartment_sex_scene",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"8H. DRIVEN TO HIS APARTMENT; SEX SCENE\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_8h_driven_to_his_apartment_sex_scene_1",
+              "text": "Continue",
+              "targetNodeId": "node_8j_end_at_his_apartment_with_waiter",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_8j_end_at_his_apartment_with_waiter",
+      "kind": "story",
+      "title": "8J. END AT HIS APARTMENT WITH WAITER",
+      "position": {
+        "x": 2197.666666666666,
+        "y": 1101.5000000000002
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_8j_end_at_his_apartment_with_waiter",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"8J. END AT HIS APARTMENT WITH WAITER\".",
+          "effects": [
+            {
+              "id": "effect_8j_end_at_his_apartment_with_waiter",
+              "key": "chapter1_outcome",
+              "operation": "set",
+              "value": "waiter_his_apartment"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice_8j_end_at_his_apartment_with_waiter_1",
+              "text": "Continue",
+              "targetNodeId": "node_3a_wake_up_with_waiter_at_his_apartment",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_2a_wake_up_alone_at_her_apartment_ex_knocks",
+      "kind": "story",
+      "title": "2A. WAKE UP ALONE AT HER APARTMENT; EX KNOCKS",
+      "position": {
+        "x": 2605.9999999999995,
+        "y": 699.5000000000001
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_2a_wake_up_alone_at_her_apartment_ex_knocks",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"2A. WAKE UP ALONE AT HER APARTMENT; EX KNOCKS\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_2a_wake_up_alone_at_her_apartment_ex_knocks_1",
+              "text": "Continue",
+              "targetNodeId": "node_1c_answer_door_see_ex",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1a_wake_up_with_waiter_at_her_apartment",
+      "kind": "story",
+      "title": "1A. WAKE UP WITH WAITER AT HER APARTMENT",
+      "position": {
+        "x": 2602.6666666666665,
+        "y": 899.8333333333334
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_1a_wake_up_with_waiter_at_her_apartment",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"1A. WAKE UP WITH WAITER AT HER APARTMENT\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1a_wake_up_with_waiter_at_her_apartment_1",
+              "text": "Let Michael leave before answering",
+              "targetNodeId": "node_1b_waiter_leaves_ex_knocks",
+              "conditions": []
+            },
+            {
+              "id": "choice_1a_wake_up_with_waiter_at_her_apartment_2",
+              "text": "Let Michael stay while Todd knocks",
+              "targetNodeId": "node_4b_waiter_stays_ex_knocks",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_3a_wake_up_with_waiter_at_his_apartment",
+      "kind": "story",
+      "title": "3A. WAKE UP WITH WAITER AT HIS APARTMENT",
+      "position": {
+        "x": 2600.9999999999986,
+        "y": 1299.833333333333
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_3a_wake_up_with_waiter_at_his_apartment",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"3A. WAKE UP WITH WAITER AT HIS APARTMENT\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_3a_wake_up_with_waiter_at_his_apartment_1",
+              "text": "Continue",
+              "targetNodeId": "node_3f_ex_knocks_on_door_nobody_is_there_to_answer",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1b_waiter_leaves_ex_knocks",
+      "kind": "story",
+      "title": "1B. WAITER LEAVES; EX KNOCKS",
+      "position": {
+        "x": 2804.3333333333335,
+        "y": 901.5
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_1b_waiter_leaves_ex_knocks",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"1B. WAITER LEAVES; EX KNOCKS\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1b_waiter_leaves_ex_knocks_1",
+              "text": "Continue",
+              "targetNodeId": "node_1c_answer_door_see_ex",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_4b_waiter_stays_ex_knocks",
+      "kind": "story",
+      "title": "4B. WAITER STAYS; EX KNOCKS",
+      "position": {
+        "x": 2805.9999999999995,
+        "y": 1103.1666666666667
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_4b_waiter_stays_ex_knocks",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"4B. WAITER STAYS; EX KNOCKS\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_4b_waiter_stays_ex_knocks_1",
+              "text": "Continue",
+              "targetNodeId": "node_4c_answer_door_see_ex_waiter_in_background",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1c_answer_door_see_ex",
+      "kind": "story",
+      "title": "1C. ANSWER DOOR; SEE EX",
+      "position": {
+        "x": 3002.9999999999995,
+        "y": 905.5000000000001
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_1c_answer_door_see_ex",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"1C. ANSWER DOOR; SEE EX\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1c_answer_door_see_ex_1",
+              "text": "Invite Todd in",
+              "targetNodeId": "node_1d_invite_ex_in_ex_doesn_t_know_about_waiter",
+              "conditions": []
+            },
+            {
+              "id": "choice_1c_answer_door_see_ex_2",
+              "text": "Talk to Todd through the door",
+              "targetNodeId": "node_6e_talk_to_ex_through_door_ex_doesn_t_know_about_waiter",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_4c_answer_door_see_ex_waiter_in_background",
+      "kind": "story",
+      "title": "4C. ANSWER DOOR; SEE EX; WAITER IN BACKGROUND",
+      "position": {
+        "x": 2995.9999999999995,
+        "y": 1103.1666666666665
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_4c_answer_door_see_ex_waiter_in_background",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"4C. ANSWER DOOR; SEE EX; WAITER IN BACKGROUND\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_4c_answer_door_see_ex_waiter_in_background_1",
+              "text": "WAITER LEAVES",
+              "targetNodeId": "node_5d_waiter_leaves",
+              "conditions": []
+            },
+            {
+              "id": "choice_4c_answer_door_see_ex_waiter_in_background_2",
+              "text": "WAITER STAYS WHILE YOU TALK TO EX THROUGH DOOR",
+              "targetNodeId": "node_4d_waiter_stays_while_you_talk_to_ex_through_door",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_5e_invite_ex_in_ex_knows_about_waiter",
+      "kind": "story",
+      "title": "5E. INVITE EX IN (EX KNOWS ABOUT WAITER)",
+      "position": {
+        "x": 3399.333333333334,
+        "y": 1301.1666666666665
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_5e_invite_ex_in_ex_knows_about_waiter",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"5E. INVITE EX IN (EX KNOWS ABOUT WAITER)\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_5e_invite_ex_in_ex_knows_about_waiter_1",
+              "text": "Sympathetic conversation",
+              "targetNodeId": "node_5f_sympathetic_conversation_with_ex",
+              "conditions": []
+            },
+            {
+              "id": "choice_5e_invite_ex_in_ex_knows_about_waiter_2",
+              "text": "Angry conversation",
+              "targetNodeId": "node_9f_angry_conversation_with_ex",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_4e_talk_to_ex_through_door_ex_knows_about_waiter",
+      "kind": "story",
+      "title": "4E. TALK TO EX THROUGH DOOR (EX KNOWS ABOUT WAITER)",
+      "position": {
+        "x": 3402.333333333333,
+        "y": 1101.833333333333
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_4e_talk_to_ex_through_door_ex_knows_about_waiter",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"4E. TALK TO EX THROUGH DOOR (EX KNOWS ABOUT WAITER)\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_4e_talk_to_ex_through_door_ex_knows_about_waiter_1",
+              "text": "Continue",
+              "targetNodeId": "node_chapter_3_notes",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_5d_waiter_leaves",
+      "kind": "story",
+      "title": "5D. WAITER LEAVES",
+      "position": {
+        "x": 3199.333333333333,
+        "y": 1296.5
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_5d_waiter_leaves",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"5D. WAITER LEAVES\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_5d_waiter_leaves_1",
+              "text": "Talk to Todd through the door",
+              "targetNodeId": "node_4e_talk_to_ex_through_door_ex_knows_about_waiter",
+              "conditions": []
+            },
+            {
+              "id": "choice_5d_waiter_leaves_2",
+              "text": "Invite Todd in",
+              "targetNodeId": "node_5e_invite_ex_in_ex_knows_about_waiter",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_4d_waiter_stays_while_you_talk_to_ex_through_door",
+      "kind": "story",
+      "title": "4D. WAITER STAYS WHILE YOU TALK TO EX THROUGH DOOR",
+      "position": {
+        "x": 3199.333333333333,
+        "y": 1106.5
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_4d_waiter_stays_while_you_talk_to_ex_through_door",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"4D. WAITER STAYS WHILE YOU TALK TO EX THROUGH DOOR\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_4d_waiter_stays_while_you_talk_to_ex_through_door_1",
+              "text": "Continue",
+              "targetNodeId": "node_4e_talk_to_ex_through_door_ex_knows_about_waiter",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_1e_sex_scene_with_ex",
+      "kind": "story",
+      "title": "1E. SEX SCENE WITH EX",
+      "position": {
+        "x": 3402.3333333333326,
+        "y": 900.5
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_1e_sex_scene_with_ex",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"1E. SEX SCENE WITH EX\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1e_sex_scene_with_ex_1",
+              "text": "Continue",
+              "targetNodeId": "node_chapter_3_notes",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_5f_sympathetic_conversation_with_ex",
+      "kind": "story",
+      "title": "5F. SYMPATHETIC CONVERSATION WITH EX",
+      "position": {
+        "x": 3598.6666666666656,
+        "y": 1301.5
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_5f_sympathetic_conversation_with_ex",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"5F. SYMPATHETIC CONVERSATION WITH EX\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_5f_sympathetic_conversation_with_ex_1",
+              "text": "Continue",
+              "targetNodeId": "node_chapter_3_notes",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_9f_angry_conversation_with_ex",
+      "kind": "story",
+      "title": "9F. ANGRY CONVERSATION WITH EX",
+      "position": {
+        "x": 3605.999999999999,
+        "y": 1507.5
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_9f_angry_conversation_with_ex",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"9F. ANGRY CONVERSATION WITH EX\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_9f_angry_conversation_with_ex_1",
+              "text": "Continue",
+              "targetNodeId": "node_chapter_3_notes",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_chapter_2_begins",
+      "kind": "story",
+      "title": "CHAPTER 2 BEGINS",
+      "position": {
+        "x": 2401,
+        "y": 1.1666666666666856
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_chapter_2_begins",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"CHAPTER 2 BEGINS\".",
+          "effects": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": "node_chapter_1_begins",
+      "kind": "story",
+      "title": "CHAPTER 1 BEGINS",
+      "position": {
+        "x": 101.66666666666669,
+        "y": 0.16666666666662877
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_chapter_1_begins",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"CHAPTER 1 BEGINS\".",
+          "effects": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": "node_chapter_3_begins",
+      "kind": "story",
+      "title": "CHAPTER 3 BEGINS",
+      "position": {
+        "x": 4181.666666666666,
+        "y": 2
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_chapter_3_begins",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"CHAPTER 3 BEGINS\".",
+          "effects": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": "node_1d_invite_ex_in_ex_doesn_t_know_about_waiter",
+      "kind": "story",
+      "title": "1D. INVITE EX IN (EX DOESN'T KNOW ABOUT WAITER)",
+      "position": {
+        "x": 3201.333333333333,
+        "y": 900.5000000000003
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_1d_invite_ex_in_ex_doesn_t_know_about_waiter",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"1D. INVITE EX IN (EX DOESN'T KNOW ABOUT WAITER)\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_1d_invite_ex_in_ex_doesn_t_know_about_waiter_1",
+              "text": "Give in to Todd",
+              "targetNodeId": "node_1e_sex_scene_with_ex",
+              "conditions": []
+            },
+            {
+              "id": "choice_1d_invite_ex_in_ex_doesn_t_know_about_waiter_2",
+              "text": "Stay angry with Todd",
+              "targetNodeId": "node_7e_sympathetic_conversation_with_ex_ex_doesn_t_know_about_waiter",
+              "conditions": []
+            },
+            {
+              "id": "choice_1d_invite_ex_in_ex_doesn_t_know_about_waiter_3",
+              "text": "ANGRY CONVERSATION WITH EX (EX DOESN'T KNOW ABOUT WAITER)",
+              "targetNodeId": "node_8e_angry_conversation_with_ex_ex_doesn_t_know_about_waiter",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_6e_talk_to_ex_through_door_ex_doesn_t_know_about_waiter",
+      "kind": "story",
+      "title": "6E. TALK TO EX THROUGH DOOR (EX DOESN'T KNOW ABOUT WAITER)",
+      "position": {
+        "x": 3405.3333333333326,
+        "y": 301.8333333333335
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_6e_talk_to_ex_through_door_ex_doesn_t_know_about_waiter",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"6E. TALK TO EX THROUGH DOOR (EX DOESN'T KNOW ABOUT WAITER)\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_6e_talk_to_ex_through_door_ex_doesn_t_know_about_waiter_1",
+              "text": "INVITE EX IN (EX DOESN'T KNOW ABOUT WAITER)",
+              "targetNodeId": "node_1d_invite_ex_in_ex_doesn_t_know_about_waiter",
+              "conditions": []
+            },
+            {
+              "id": "choice_6e_talk_to_ex_through_door_ex_doesn_t_know_about_waiter_2",
+              "text": "CHAPTER 3 NOTES",
+              "targetNodeId": "node_chapter_3_notes",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_3f_ex_knocks_on_door_nobody_is_there_to_answer",
+      "kind": "story",
+      "title": "3F. EX KNOCKS ON DOOR; NOBODY IS THERE TO ANSWER",
+      "position": {
+        "x": 3598.333333333332,
+        "y": 1700.833333333333
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_3f_ex_knocks_on_door_nobody_is_there_to_answer",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"3F. EX KNOCKS ON DOOR; NOBODY IS THERE TO ANSWER\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_3f_ex_knocks_on_door_nobody_is_there_to_answer_1",
+              "text": "Continue",
+              "targetNodeId": "node_chapter_3_notes",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_chapter_3_notes",
+      "kind": "story",
+      "title": "CHAPTER 3 NOTES",
+      "position": {
+        "x": 4501.666666666666,
+        "y": 795.3333333333335
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_chapter_3_notes",
+          "speaker": "Narrator",
+          "text": "Outline note: POV character has unrelated scenario that acts as character development, with chance for a one-night-stand. Previous chapters are represented through text messages.",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_chapter_3_notes_1",
+              "text": "Continue",
+              "targetNodeId": "node_chapter_4_notes",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_chapter_4_begins",
+      "kind": "story",
+      "title": "CHAPTER 4 BEGINS",
+      "position": {
+        "x": 4781.666666666666,
+        "y": 0.3333333333333339
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_chapter_4_begins",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"CHAPTER 4 BEGINS\".",
+          "effects": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": "node_chapter_4_notes",
+      "kind": "story",
+      "title": "CHAPTER 4 NOTES",
+      "position": {
+        "x": 5001.666666666666,
+        "y": 800.3333333333334
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_chapter_4_notes",
+          "speaker": "Narrator",
+          "text": "Outline note: Denoument chapter that focuses on story path resolutions: Horny path, Ex path, Waiter path, Happy Restraint path (no sex, flirtatious choices), Sad Restraint path (no sex, depressed choices).",
+          "effects": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": "node_7e_sympathetic_conversation_with_ex_ex_doesn_t_know_about_waiter",
+      "kind": "story",
+      "title": "7E. SYMPATHETIC CONVERSATION WITH EX (EX DOESN'T KNOW ABOUT WAITER)",
+      "position": {
+        "x": 3402.0000000000005,
+        "y": 501.166666666667
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_7e_sympathetic_conversation_with_ex_ex_doesn_t_know_about_waiter",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"7E. SYMPATHETIC CONVERSATION WITH EX (EX DOESN'T KNOW ABOUT WAITER)\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_7e_sympathetic_conversation_with_ex_ex_doesn_t_know_about_waiter_1",
+              "text": "Continue",
+              "targetNodeId": "node_chapter_3_notes",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node_8e_angry_conversation_with_ex_ex_doesn_t_know_about_waiter",
+      "kind": "story",
+      "title": "8E. ANGRY CONVERSATION WITH EX (EX DOESN'T KNOW ABOUT WAITER)",
+      "position": {
+        "x": 3395.6666666666665,
+        "y": 697.1666666666671
+      },
+      "phrases": [
+        {
+          "id": "phrase_placeholder_8e_angry_conversation_with_ex_ex_doesn_t_know_about_waiter",
+          "speaker": "Narrator",
+          "text": "TODO: Draft scene content for \"8E. ANGRY CONVERSATION WITH EX (EX DOESN'T KNOW ABOUT WAITER)\".",
+          "effects": [],
+          "choices": [
+            {
+              "id": "choice_8e_angry_conversation_with_ex_ex_doesn_t_know_about_waiter_1",
+              "text": "Continue",
+              "targetNodeId": "node_chapter_3_notes",
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": [],
+  "editor": {
+    "selectedNodeId": "node_1a_woman_at_restaurant",
+    "selectedPhraseId": null,
+    "map": {
+      "zoom": 0.6,
+      "pan": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  }
+}

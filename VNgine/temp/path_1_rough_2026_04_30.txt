@@ -1,0 +1,313 @@
+---> START
+Heavy rain beats down on empty streets as lights from businesses that probably should have closed an hour ago reflect in the shallow pools along the curb. Winter's last chill clings to the spring rain.
+
+In retrospect, reservations at [restaurant] were overkill. 
+
+Reservations for two were *definitely* overkill.
+
+That part had been your ex's idea.
+
+He wanted a second chance. Todd had never been easy to reduce to a villain. He could be thoughtless. Inconsistent. Infuriating in ways that seemed to leave *you* apologizing for being hurt. But he could also look at you like you were the only person in the room, like choosing you was the easiest thing he'd ever done.
+
+That look had been enough to keep you waiting through a lot.
+
+Tonight it had been enough to get you sitting alone with a half-eaten meal cooling in front of you.
+
+...nothing.
+
+Well, nothing except a half-empty wine glass, and a plate you can't bring yourself to care about. And some messages from Sammy about her party tomorrow.
+
+The waiter approaches, and you realize how late it's gotten.
+
+He has gentle eyes and a soft smile. You've tried not to notice- the two of you have been the only people in the restaurant for at least several hours.
+
+		DIANA
+	Ah... I'm so sorry. You're probably getting ready to close.
+	I promise the food was good. I've just been a little... distracted.
+	
+		MICHAEL
+	Technically, we closed about thirty minutes ago.
+	You looked like you were waiting for someone... and like you needed a bit of space.
+	But... if you don't mind...
+	
+You brace for admonishment, or polite pressure, or the familiar embarrassment of being gently moved along. It would be entirely reasonable.
+
+		MICHAEL
+	...I'm starting to feel a little invested.
+	Who are we waiting for?
+	
+----[Dialogue Choices open]	
+	
+		DIANA
+	...my ex.
+	I broke up with him a couple months back. One day he'd make me feel like I was his whole world, and the next I'd be checking my phone every fifteen minutes wondering if I'd imagined half our relationship.
+	It looks like he hasn't changed.
+	...sorry. I... shouldn't be unloading on you.
+	I should go.
+	
+The waiter waves off your concern.
+
+		MICHAEL
+	Stay as long as you want, ma'am- the storm is getting worse, and I don't have anywhere else to be tonight.
+	It sounds like you're having a rough one- your meal is on the house tonight.
+	I can throw in a bit of dessert?
+
+----[Dialogue Choice]
+	
+Your eyebrow rises despite yourself. He notices and fills the silence without missing a beat.
+
+		MICHAEL
+	If the tiramisu doesn't fix your love life, we do have a backup chocolate cake.
+	You'd be surprised what a good dessert can do.
+	Last week I watched a first date play out over our strawberry shortcake. Ended with them going home together. True love, I think. Destined for marriage.
+	
+----[Dialogue Choice]
+	
+		DIANA
+	I don't think I want to reinvent my whole life over dessert.
+
+		MICHAEL
+	Fair- but we all deserve a little treat now and then.
+	Especially on nights like tonight.
+	Actually... give me one second. I'll be right back.
+
+---[Dialogue choices converge]
+	
+There's an admirable sort of earnestness to him. You watch as he heads to the kitchen on some sort of mission.
+
+---> Stay or Leave?
+		LEAVE
+
+Left alone, your apprehension rises as quickly as your relief. He seems nice... but a part of you can't help but feel like he's just trying to get into your pants.
+
+Not that that's the worst thing that could happen.
+
+Not tonight.
+
+Left alone at your table, old emotions begin to stew. Todd made you feel that way too, early on. But two years of Todd's excuses, and two years of feeling invisible, bubble up. Something inside you tells you that you need to get out of there. It's almost a panic.
+
+Still nothing. Fuck.
+
+The rain has picked up- you're drenched within moments. Your blouse clings to your skin. Water beads on your lashes. The air feels warm with the promise of life, but the rain itself is cold. A shiver runs through you.
+
+Todd's silence tonight probably wasn't malicious, but that almost makes it worse. Malice would've required intention. And this was just more of the same.
+
+There's always a reason. Maybe he got caught in some fresh emergency, some new chaos, some mess dramatic enough that he truly lost track of time and only noticed when it was far too late. 
+Maybe he's at home right now, staring at his phone- realizing exactly where the evening went wrong.
+But it doesn't matter.
+
+Your mind moves through all of the versions of tonight you let yourself picture.
+Todd showing up damp from the rain, breathless and apologetic.
+Todd being sincere enough that the rest of the restaurant disappears and it was just you and him.
+Todd finally saying something that closes the distance.
+
+It feels stupid. There are plenty of people who would've been there for you, but for some reason... that empty chair is all that matters.
+
+Rainwater runs down the back of your neck.
+
+You could keep walking until the feeling burns off. You can call a ride and get yourself somewhere dry.
+You could keep telling yourself this is closure. Maybe it'll be true if you say it enough times.
+
+---> Keep walking or Call Uber?
+		CALL UBER
+
+You gave Todd a second chance. That was the last thing you owed the version of yourself that fell in love with him two years ago.
+
+This version of you deserves to get someplace warm.
+
+You reach for your phone.
+Then your purse.
+
+Fuck. In your panic, you must have-
+
+The restaurant is dark by the time you make it back.
+
+Soaked to the bone, you knock on the door with one last desperate hope that someone is still there. You really do not want to walk home through this mess.
+
+Even standing still, your heart is pounding almost as hard as the rain drumming against the overhang.
+
+You take a breath. Then another.
+
+You wait. You hope.
+The entire evening has been a long wait, without reward.
+Fuck.
+
+All you wanted was warmth. To be seen. To be heard.
+To be chosen.
+
+Disconsolate, you turn to walk away-
+The light turns on.
+
+		MICHAEL
+	Holy shit... are you okay?
+	Come inside and dry off in the kitchen, okay?
+	It's freezing out here. I was starting to wonder if something happened to you.
+
+---[Dialogue choice]
+
+		DIANA
+	Yeah... I was just walking.
+	I didn't realize I'd left my things behind until I went to call a ride.
+
+---[Dialogue choices converge]
+	
+		MICHAEL
+	C'mon. Let's get you warmed up. Your stuff is in the back.
+
+The kitchen is still warm from the day. It gets warmer as he starts bringing it back to life.
+His gentle eyes glance over you, more fully now than they did before.
+You can tell that he's mapping things out in his head.
+
+		MICHAEL
+	I can give you a ride back to your place after you've warmed up a bit, if you'd like.
+
+A flush of heat rushes through you as you start mapping things out in your head too.
+Thoughts start to intrude... of things that you'd like.
+Something deep down grows very warm.
+
+You're not sure how loaded the invitation was. It was delivered without presumption.
+But part of you hopes...
+
+---> Restraint or Lean into it?
+		LEAN INTO IT
+
+Your thoughts should probably be more complicated than they are. But they're not complicated at all.
+
+Relief. Attraction. Impulse. Safety.
+
+You set the warm cup down and lean into him. As you lean in, your clothes cling to him as much as they do to you.
+
+Your breasts press against him. As the kiss deepens, his shirt soaks through.
+He leans back into you.
+A fiery warmth spreads throughout your body.
+You want him.
+
+---->AFTERGLOW
+
+		DIANA
+	So... bring young women back here often?
+	
+He chuckles softly at the thought, and you can't help but feel a kind of innocence behind it.
+	
+		MICHAEL
+	You got me. This was all part of my diabolical plan to make sure you didn't get hypothermia.
+	
+		DIANA
+	Truly monstrous.
+	How ever will your reputation recover?
+	
+		MICHAEL
+	I hear that a lot. Not usually from the ladies, though. Mostly from my younger siblings when I twist their arms into picking up extra shifts.
+	
+		DIANA
+	Wait... you run this place?
+	
+		MICHAEL
+	Close enough that I can get creative about how I define 'full service'.
+	
+		DIANA
+	That phrase keeps sounding dirtier every time you say it.
+
+		MICHAEL
+	That's on you.
+	*I* was talking about hospitality.
+
+		DIANA
+	Were you?
+
+		MICHAEL
+	...
+	...Mostly.
+	
+		DIANA
+	I feel like I should make some sort of joke about leaving you a tip, but I can't think of anything good.
+	
+		MICHAEL
+	Well, you have a car ride to think of something. What's your address?
+	
+Something about the way he says it sends another flush of warmth through your body. You can't help but slowly smile.
+	
+--->LEAVING
+
+---[Dialogue choices open]
+
+		DIANA
+	So what's the story about you and this place? Just picking up a late shift?
+	
+		MICHAEL
+	Ah... it's actually my dad's place. He's been having some health problems, so I've sort of been stepping up.
+	It's been taking more out of me than I realized. I needed tonight.
+	
+		DIANA
+	Sounds like it's been a lot.
+	
+		MICHAEL
+	It's mostly fine, it just adds up.
+	It's easy to feel overlooked or taken for granted, y'know?
+	
+You know.
+
+		MICHAEL
+	Sorry... I shouldn't be unloading on you...
+
+---[Dialogue choice]
+	
+		DIANA
+	We all need that from time to time...
+	... and I'm guessing you don't do that often.
+	
+		
+		MICHAEL
+	What? Unload on women I just met?
+	
+He says it with enough innocence that you're almost convinced he doesn't realize what he just said.
+	
+He smiles quietly as the two of you walk.
+
+---[Dialogue choices converge]
+
+At some point the chilled rain stops, leaving only puddles and warm humid air.
+The pavement almost steams. The whole street feels fuller than it did before, as if the city had quietly decided to start breathing again.
+
+The car ride is mostly filled with a warm silence. A part of you knows that if you say anything right now, it will come out as too honest. Too honest about who you are, too honest about what you want.
+The feeling seems to be mutual.
+There is a warm apprehension about what comes next. The uncertainty almost feels uplifting.
+
+His hand brushes yours between the seats before his mouth does- tentative and slow, as if checking if this is what you want.
+His lips meet yours- warm and careful at first, then sure enough to make heat unfurl low in your body. You lean into the kiss.
+
+If you invite him up, you know what it means. The warmth inside you grows fiery and barely contained. Your skin grows flush... barely containing the escalating hunger.
+
+		MICHAEL
+	You don't have to decide anything right now.
+	I mean it- there's no pressure.
+	
+He means well, but he's wrong- the pressure wells up inside of you, desperate for release. Desperate to feel him pressed against you. 
+Your body has been waiting for this moment.
+
+---> Say Goodnight or Invite him up?
+		INVITE HIM UP
+		
+		MICHAEL
+	I don't want you to invite me up because somebody else made you feel small...
+	
+---[Dialoge choices open]
+	
+		DIANA
+	What if I'm inviting you up because you make me feel the opposite?
+	
+For once, he doesn't answer quickly.
+He looks at you the way he did earlier- careful and intent, like he understands the shape of what he's being handed and doesn't want to crush it by grabbing too fast.
+
+		MICHAEL
+	Then I think I'd like to come upstairs.
+
+---[Dialogue choices converge]
+	
+The stairs up to your apartment are familiar, but you almost trip on them as you go up them.
+Thoughts of what's about to happen flood your mind.
+The door to your apartment clicks open.
+You get the feeling that he's the kind of person who likes to take the room in when he walks into it- but he's far too focused on the shape of your body.
+The feel of your body. Your breasts cupped in his hands, your hips unburdened by clothes and pressed against him.
+
+No more waiting.

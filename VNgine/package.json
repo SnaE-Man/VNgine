@@ -1,0 +1,30 @@
+{
+  "name": "vngine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "Shared",
+    "Editor",
+    "Engine"
+  ],
+  "scripts": {
+    "dev:editor": "npm --workspace @vngine/editor run dev",
+    "dev:engine": "npm --workspace @vngine/engine run dev",
+    "build": "npm --workspace @vngine/shared run build && npm --workspace @vngine/editor run build && npm --workspace @vngine/engine run build",
+    "test": "npm --workspace @vngine/shared run test"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.7",
+    "vitest": "^4.0.15"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.10.0",
+    "jszip": "^3.10.1",
+    "zod": "^4.2.1",
+    "zustand": "^5.0.9",
+    "lucide-react": "^0.562.0"
+  }
+}
