@@ -4,6 +4,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react()],
+  base: process.env.VITE_ENGINE_BASE_PATH ?? "/",
   server: { host: "127.0.0.1", port: 5174 },
   resolve: {
     alias: {
