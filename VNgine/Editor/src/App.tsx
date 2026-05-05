@@ -1,7 +1,7 @@
 import { Background, Controls, ReactFlow, type Edge, type Node } from "@xyflow/react";
 import { Download, FileUp, FolderOpen, ImagePlus, Plus, Route, Search, Wand2 } from "lucide-react";
 import { useMemo, useRef, useState } from "react";
-import { createNewProject, openProjectFile, type ChoiceCondition, type ResourceFile } from "@vngine/shared";
+import { createNewProject, normalizeLoadedResourcePath, openProjectFile, type ChoiceCondition, type ResourceFile } from "@vngine/shared";
 import { useEditorStore } from "./store";
 
 export function App() {
@@ -24,7 +24,7 @@ export function App() {
     const images = [...files].filter((file) => file.type.startsWith("image/"));
     const resources: ResourceFile[] = images.map((file) => {
       const relativePath = (file as File & { webkitRelativePath?: string }).webkitRelativePath || file.name;
-      const path = relativePath.replace(/^Resource\//, "").replaceAll("\\", "/");
+      const path = normalizeLoadedResourcePath(relativePath);
       return { path, name: file.name, type: file.type, size: file.size, file, url: URL.createObjectURL(file) };
     });
     store.setResources(resources);

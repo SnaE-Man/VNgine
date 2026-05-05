@@ -8,6 +8,12 @@ export type ResourceFile = ResourceAsset & {
   url: string;
 };
 
+export function normalizeLoadedResourcePath(rawPath: string): string {
+  const path = rawPath.replaceAll("\\", "/").replace(/^\.\/+/, "");
+  const resourceRootMatch = path.match(/(?:^|\/)(?:resources?|Resources?)\/(.+)$/);
+  return resourceRootMatch?.[1] ?? path;
+}
+
 export function createNewProject(): VNgineProject {
   const titleNodeId = createId("node");
   return {
@@ -104,7 +110,7 @@ async function readZipResources(zip: JSZip): Promise<ResourceFile[]> {
   const entries = Object.values(zip.files).filter((entry) => !entry.dir && entry.name.startsWith("resources/"));
   for (const entry of entries) {
     const blob = await entry.async("blob");
-    const path = entry.name.replace(/^resources\//, "");
+    const path = normalizeLoadedResourcePath(entry.name);
     const file = new File([blob], path.split("/").at(-1) || path, { type: blob.type || guessType(path) });
     resources.push({ path, name: file.name, type: file.type || guessType(path), size: file.size, file, url: URL.createObjectURL(file) });
   }

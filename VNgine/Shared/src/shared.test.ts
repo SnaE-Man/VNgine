@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { applyEffects, createInitialRuntimeState, evaluateCondition, goBack, goForward, parseImportedPhrases, projectSchema, projectToGame, sampleProject, validateProject } from "./index";
+import { applyEffects, createInitialRuntimeState, evaluateCondition, goBack, goForward, normalizeLoadedResourcePath, parseImportedPhrases, projectSchema, projectToGame, sampleProject, validateProject } from "./index";
 
 describe("schemas and validation", () => {
   it("accepts the sample project", () => {
@@ -21,6 +21,15 @@ describe("import parser", () => {
     expect(phrases[0].speaker).toBe("john");
     expect(phrases[0].text).toBe("Hello\nthere.");
     expect(phrases[1].speaker).toBe("Narrator");
+  });
+});
+
+describe("resource paths", () => {
+  it("normalizes resource folders from directory pickers and unzipped packages", () => {
+    expect(normalizeLoadedResourcePath("Resource/Backgrounds/core_path_002.jpg")).toBe("Backgrounds/core_path_002.jpg");
+    expect(normalizeLoadedResourcePath("resources/Backgrounds/core_path_002.jpg")).toBe("Backgrounds/core_path_002.jpg");
+    expect(normalizeLoadedResourcePath("Last Dish/resources/Backgrounds/core_path_002.jpg")).toBe("Backgrounds/core_path_002.jpg");
+    expect(normalizeLoadedResourcePath("Backgrounds\\core_path_002.jpg")).toBe("Backgrounds/core_path_002.jpg");
   });
 });
 

@@ -6,6 +6,7 @@ import {
   getVisibleChoices,
   goBack,
   goForward,
+  normalizeLoadedResourcePath,
   openGameFile,
   saveSchema,
   validateProject,
@@ -56,7 +57,7 @@ export const useEngineStore = create<EngineStore>((set, get) => ({
     const images = [...files].filter((file) => file.type.startsWith("image/"));
     const resources: ResourceFile[] = images.map((file) => {
       const relativePath = (file as File & { webkitRelativePath?: string }).webkitRelativePath || file.name;
-      const path = relativePath.replace(/^Resource\//, "").replaceAll("\\", "/");
+      const path = normalizeLoadedResourcePath(relativePath);
       return { path, name: file.name, type: file.type, size: file.size, file, url: URL.createObjectURL(file) };
     });
     set({ resources, issues: validateProject(game, resources.map((resource) => resource.path)) });
