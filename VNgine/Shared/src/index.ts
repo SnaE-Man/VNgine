@@ -5,3 +5,4 @@ export * from "./runtime";
 export * from "./importer";
 export * from "./export";
 export * from "./sample";
+export * from "./editorOps";

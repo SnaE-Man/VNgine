@@ -119,6 +119,7 @@ button:disabled { opacity: .45; }
   margin: 0;
   font-size: clamp(18px, 2.4vw, 24px);
   line-height: 1.45;
+  white-space: pre-line;
 }
 .choices {
   display: flex;

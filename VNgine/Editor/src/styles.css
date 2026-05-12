@@ -40,6 +40,7 @@ h2 { margin: 0; font-size: 15px; letter-spacing: 0; }
   padding: 9px 12px;
   border-bottom: 1px solid #2b323a;
   background: #151a20;
+  min-height: 0;
 }
 .brand { font-weight: 800; white-space: nowrap; }
 .toolbar > input { max-width: 240px; }
@@ -87,13 +88,29 @@ h2 { margin: 0; font-size: 15px; letter-spacing: 0; }
 .nodeRow {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: auto minmax(0, 1fr) auto auto auto auto;
+  align-items: center;
+  gap: 6px;
+  min-height: 38px;
+  padding: 6px;
+  border: 1px solid #343c45;
+  background: #20262d;
+  color: #edf1f4;
+  border-radius: 6px;
   margin-bottom: 6px;
   text-align: left;
+  cursor: pointer;
 }
+.nodeRow:hover { background: #2c3540; }
 .nodeRow.selected, .phrase.selected, .imageGrid button.selected { outline: 2px solid #58a6ff; }
+.nodeRow span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .nodeRow small { color: #9aa7b2; }
 .nodeRow b { background: #d35f5f; border-radius: 999px; min-width: 20px; text-align: center; }
+.nodeRow button, .phraseActions button {
+  min-width: 32px;
+  min-height: 28px;
+  padding: 4px 7px;
+}
 .mapPanel { position: relative; }
 .react-flow { background: #0f1216; }
 .flowNode {
@@ -124,6 +141,19 @@ h2 { margin: 0; font-size: 15px; letter-spacing: 0; }
   border-radius: 8px;
   background: #151a20;
 }
+.phrase { cursor: grab; }
+.phrase:active { cursor: grabbing; }
+.phraseTop {
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.dragLabel, .phraseActions {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.phraseActions { flex-wrap: wrap; justify-content: flex-end; }
 .subhead {
   justify-content: space-between;
   color: #bac5ce;

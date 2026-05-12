@@ -1,5 +1,5 @@
 import { Background, Controls, ReactFlow, type Edge, type Node } from "@xyflow/react";
-import { Download, FileUp, FolderOpen, ImagePlus, Plus, Route, Search, Wand2 } from "lucide-react";
+import { ArrowDown, ArrowUp, Download, FileUp, FolderOpen, GripVertical, ImagePlus, Play, Plus, Route, Scissors, Search, Wand2 } from "lucide-react";
 import { useMemo, useRef, useState } from "react";
 import { createNewProject, normalizeLoadedResourcePath, openProjectFile, type ChoiceCondition, type ResourceFile } from "@vngine/shared";
 import { useEditorStore } from "./store";
@@ -11,6 +11,7 @@ export function App() {
   const selectedNode = store.project.nodes.find((node) => node.id === store.project.editor.selectedNodeId);
   const selectedPhrase = store.project.nodes.flatMap((node) => node.phrases).find((phrase) => phrase.id === store.project.editor.selectedPhraseId);
   const missing = store.issues.filter((issue) => issue.message.startsWith("Missing resource"));
+  const canPlayFromHere = selectedNode?.kind === "story";
 
   async function openProject(files: FileList | null) {
     const file = files?.[0];
@@ -39,6 +40,7 @@ export function App() {
         <button onClick={() => fileInput.current?.click()}><FileUp size={16} /> Open</button>
         <button onClick={() => directoryInput.current?.click()}><FolderOpen size={16} /> Resources</button>
         <button onClick={() => store.setImportOpen(true)}><Wand2 size={16} /> Import Content</button>
+        <button disabled={!canPlayFromHere} title={canPlayFromHere ? "Open the engine at the selected node" : "Select a story node to playtest"} onClick={store.playFromSelectedNode}><Play size={16} /> Play From Here</button>
         <button onClick={store.validate}>Validate</button>
         <div className="menu">
           <button><Download size={16} /> Export</button>
@@ -83,8 +85,10 @@ export function App() {
 
 function NodeList() {
   const [query, setQuery] = useState("");
-  const { project, selectNode, issues } = useEditorStore();
+  const [draggedNodeId, setDraggedNodeId] = useState<string | null>(null);
+  const { project, selectNode, moveNode, reorderNodes, issues } = useEditorStore();
   const filtered = project.nodes.filter((node) => searchableNode(node).includes(query.toLowerCase()));
+  const allStoryNodeIds = project.nodes.filter((node) => node.kind === "story").map((node) => node.id);
   return (
     <>
       <div className="panelHead"><h2>Nodes</h2><div className="search"><Search size={15} /><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search nodes" /></div></div>
@@ -92,11 +96,27 @@ function NodeList() {
         {filtered.map((node) => {
           const nodeIssues = issues.filter((issue) => issue.path === node.id || node.phrases.some((phrase) => phrase.id === issue.path));
           return (
-            <button key={node.id} className={`nodeRow ${project.editor.selectedNodeId === node.id ? "selected" : ""}`} onClick={() => selectNode(node.id)}>
+            <div
+              key={node.id}
+              className={`nodeRow ${project.editor.selectedNodeId === node.id ? "selected" : ""}`}
+              draggable={node.kind === "story"}
+              onDragStart={() => setDraggedNodeId(node.id)}
+              onDragOver={(event) => node.kind === "story" && event.preventDefault()}
+              onDrop={(event) => {
+                event.preventDefault();
+                if (!draggedNodeId || draggedNodeId === node.id || node.kind !== "story") return;
+                reorderNodes(reorderDraggedId(allStoryNodeIds, draggedNodeId, node.id));
+                setDraggedNodeId(null);
+              }}
+              onClick={() => selectNode(node.id)}
+            >
+              <GripVertical size={14} />
               <span>{node.title}</span>
               <small>{node.kind}</small>
               {nodeIssues.length > 0 && <b>{nodeIssues.length}</b>}
-            </button>
+              {node.kind === "story" && <button title="Move node up" onClick={(event) => { event.stopPropagation(); moveNode(node.id, "up"); }}><ArrowUp size={13} /></button>}
+              {node.kind === "story" && <button title="Move node down" onClick={(event) => { event.stopPropagation(); moveNode(node.id, "down"); }}><ArrowDown size={13} /></button>}
+            </div>
           );
         })}
       </div>
@@ -144,6 +164,7 @@ function NodeMap() {
 
 function NodeEditor() {
   const store = useEditorStore();
+  const [draggedPhraseId, setDraggedPhraseId] = useState<string | null>(null);
   const node = store.project.nodes.find((candidate) => candidate.id === store.project.editor.selectedNodeId);
   const storyNodes = store.project.nodes.filter((candidate) => candidate.kind === "story");
   if (!node) return <Empty title="No node selected" />;
@@ -161,12 +182,36 @@ function NodeEditor() {
   }
   return (
     <>
-      <div className="panelHead"><h2>{node.title}</h2><button onClick={store.addPhrase}><Plus size={15} /> Phrase</button></div>
+      <div className="panelHead"><h2>{node.title}</h2><button onClick={() => store.insertPhrase(store.project.editor.selectedPhraseId, "below")}><Plus size={15} /> Phrase</button></div>
       <div className="scroll phrases">
+        <label>Node Name<input value={node.title} onChange={(event) => store.updateNodeTitle(node.id, event.target.value)} /></label>
         <label className="compact">Start node <input type="checkbox" checked={store.project.startNodeId === node.id} onChange={() => store.setProject({ ...store.project, startNodeId: node.id })} /></label>
         {node.phrases.map((phrase, index) => (
-          <article key={phrase.id} className={`phrase ${store.project.editor.selectedPhraseId === phrase.id ? "selected" : ""}`} onClick={() => store.selectPhrase(phrase.id)}>
-            <div className="phraseTop"><strong>Phrase {index + 1}</strong><button onClick={() => store.deletePhrase(phrase.id)}>Delete</button></div>
+          <article
+            key={phrase.id}
+            className={`phrase ${store.project.editor.selectedPhraseId === phrase.id ? "selected" : ""}`}
+            draggable
+            onDragStart={() => setDraggedPhraseId(phrase.id)}
+            onDragOver={(event) => event.preventDefault()}
+            onDrop={(event) => {
+              event.preventDefault();
+              if (!draggedPhraseId || draggedPhraseId === phrase.id) return;
+              store.reorderPhrases(node.id, reorderDraggedId(node.phrases.map((item) => item.id), draggedPhraseId, phrase.id));
+              setDraggedPhraseId(null);
+            }}
+            onClick={() => store.selectPhrase(phrase.id)}
+          >
+            <div className="phraseTop">
+              <span className="dragLabel"><GripVertical size={14} /><strong>Phrase {index + 1}</strong></span>
+              <div className="phraseActions">
+                <button title="Insert phrase above" onClick={(event) => { event.stopPropagation(); store.insertPhrase(phrase.id, "above"); }}><Plus size={13} /> Above</button>
+                <button title="Insert phrase below" onClick={(event) => { event.stopPropagation(); store.insertPhrase(phrase.id, "below"); }}><Plus size={13} /> Below</button>
+                <button title="Move phrase up" onClick={(event) => { event.stopPropagation(); store.movePhrase(phrase.id, "up"); }}><ArrowUp size={13} /></button>
+                <button title="Move phrase down" onClick={(event) => { event.stopPropagation(); store.movePhrase(phrase.id, "down"); }}><ArrowDown size={13} /></button>
+                <button title="Split node here" disabled={index === 0} onClick={(event) => { event.stopPropagation(); store.splitNode(phrase.id); }}><Scissors size={13} /> Split</button>
+                <button onClick={(event) => { event.stopPropagation(); store.deletePhrase(phrase.id); }}>Delete</button>
+              </div>
+            </div>
             <input value={phrase.speaker} onChange={(e) => store.updatePhrase(phrase.id, { speaker: e.target.value })} placeholder="Speaker" />
             <textarea value={phrase.text} onChange={(e) => store.updatePhrase(phrase.id, { text: e.target.value })} placeholder="Dialog text" />
             <input readOnly value={phrase.image?.path ?? "No image assigned"} />
@@ -274,4 +319,12 @@ function searchableNode(node: ReturnType<typeof useEditorStore.getState>["projec
 
 function parseMaybeNumber(value: string) {
   return value.trim() !== "" && !Number.isNaN(Number(value)) ? Number(value) : value;
+}
+
+function reorderDraggedId(ids: string[], draggedId: string, targetId: string): string[] {
+  const next = ids.filter((id) => id !== draggedId);
+  const targetIndex = next.indexOf(targetId);
+  if (targetIndex === -1) return ids;
+  next.splice(targetIndex, 0, draggedId);
+  return next;
 }

@@ -4,10 +4,14 @@ import {
   createNewProject,
   exportGameZip,
   exportProjectZip,
+  insertPhraseNear,
+  moveItemByDirection,
   parseImportedPhrases,
   projectToGame,
+  reorderItemsByIds,
   sampleProject,
   serializeJson,
+  splitNodeAtPhrase,
   validateProject,
   type Choice,
   type ChoiceCondition,
@@ -33,10 +37,17 @@ type EditorStore = {
   selectNode: (nodeId: string) => void;
   selectPhrase: (phraseId: string | null) => void;
   addNode: () => void;
+  updateNodeTitle: (nodeId: string, title: string) => void;
+  moveNode: (nodeId: string, direction: "up" | "down") => void;
+  reorderNodes: (orderedNodeIds: string[]) => void;
   updateNodePosition: (nodeId: string, position: { x: number; y: number }) => void;
   autoOrganize: () => void;
   updateTitleScreen: (patch: Partial<NonNullable<VNNode["titleScreen"]>>) => void;
   addPhrase: () => void;
+  insertPhrase: (phraseId: string | null, position: "above" | "below") => void;
+  movePhrase: (phraseId: string, direction: "up" | "down") => void;
+  reorderPhrases: (nodeId: string, orderedPhraseIds: string[]) => void;
+  splitNode: (phraseId: string) => void;
   updatePhrase: (phraseId: string, patch: Partial<Phrase>) => void;
   deletePhrase: (phraseId: string) => void;
   addEffect: (phraseId: string) => void;
@@ -59,6 +70,7 @@ type EditorStore = {
   exportFullProject: () => Promise<void>;
   exportLeanGame: () => void;
   exportFullGame: () => Promise<void>;
+  playFromSelectedNode: () => void;
   setImportOpen: (open: boolean) => void;
   setMissingOpen: (open: boolean) => void;
   loadSample: () => void;
@@ -102,6 +114,20 @@ export const useEditorStore = create<EditorStore>((set, get) => ({
     project.startNodeId ??= node.id;
     project.editor.selectedNodeId = node.id;
   }),
+  updateNodeTitle: (nodeId, title) => mutateProject(set, get, (project) => {
+    const node = project.nodes.find((candidate) => candidate.id === nodeId);
+    if (node && node.kind === "story") node.title = title;
+  }),
+  moveNode: (nodeId, direction) => mutateProject(set, get, (project) => {
+    const titleNode = project.nodes.find((node) => node.kind === "title");
+    const storyNodes = project.nodes.filter((node) => node.kind === "story");
+    project.nodes = [titleNode, ...moveItemByDirection(storyNodes, nodeId, direction)].filter((node): node is VNNode => Boolean(node));
+  }),
+  reorderNodes: (orderedNodeIds) => mutateProject(set, get, (project) => {
+    const titleNode = project.nodes.find((node) => node.kind === "title");
+    const storyNodes = project.nodes.filter((node) => node.kind === "story");
+    project.nodes = [titleNode, ...reorderItemsByIds(storyNodes, orderedNodeIds)].filter((node): node is VNNode => Boolean(node));
+  }),
   updateNodePosition: (nodeId, position) => mutateProject(set, get, (project) => {
     const node = project.nodes.find((candidate) => candidate.id === nodeId);
     if (node) node.position = position;
@@ -121,6 +147,36 @@ export const useEditorStore = create<EditorStore>((set, get) => ({
     const phrase = blankPhrase();
     node.phrases.push(phrase);
     project.editor.selectedPhraseId = phrase.id;
+  }),
+  insertPhrase: (phraseId, position) => mutateProject(set, get, (project) => {
+    const node = selectedNode(project);
+    if (!node || node.kind !== "story") return;
+    const phrase = blankPhrase();
+    node.phrases = insertPhraseNear(node.phrases, phraseId, position, phrase);
+    project.editor.selectedPhraseId = phrase.id;
+  }),
+  movePhrase: (phraseId, direction) => mutateProject(set, get, (project) => {
+    for (const node of project.nodes) {
+      if (node.kind === "story" && node.phrases.some((phrase) => phrase.id === phraseId)) {
+        node.phrases = moveItemByDirection(node.phrases, phraseId, direction);
+        project.editor.selectedPhraseId = phraseId;
+        break;
+      }
+    }
+  }),
+  reorderPhrases: (nodeId, orderedPhraseIds) => mutateProject(set, get, (project) => {
+    const node = project.nodes.find((candidate) => candidate.id === nodeId);
+    if (node?.kind === "story") node.phrases = reorderItemsByIds(node.phrases, orderedPhraseIds);
+  }),
+  splitNode: (phraseId) => mutateProject(set, get, (project) => {
+    const nodeIndex = project.nodes.findIndex((node) => node.kind === "story" && node.phrases.some((phrase) => phrase.id === phraseId));
+    const node = project.nodes[nodeIndex];
+    if (!node) return;
+    const result = splitNodeAtPhrase(node, phraseId, createId("node"), createId("choice"));
+    if (!result) return;
+    project.nodes.splice(nodeIndex, 1, result.original, result.created);
+    project.editor.selectedNodeId = result.created.id;
+    project.editor.selectedPhraseId = phraseId;
   }),
   updatePhrase: (phraseId, patch) => mutateSelectedPhrase(set, get, phraseId, (phrase) => Object.assign(phrase, patch)),
   deletePhrase: (phraseId) => mutateProject(set, get, (project) => {
@@ -189,6 +245,24 @@ export const useEditorStore = create<EditorStore>((set, get) => ({
   exportFullProject: async () => download(await exportProjectZip(get().project, get().resources), `${safeName(get().project.title)}.vngproj.zip`),
   exportLeanGame: () => download(serializeJson(projectToGame(get().project)), `${safeName(get().project.title)}.vngame`),
   exportFullGame: async () => download(await exportGameZip(projectToGame(get().project), get().resources), `${safeName(get().project.title)}.vngame.zip`),
+  playFromSelectedNode: () => {
+    const { project, resources } = get();
+    const selected = selectedNode(project);
+    if (!selected || selected.kind !== "story") return;
+    const game = { ...projectToGame(project), startNodeId: selected.id };
+    const payload = {
+      type: "vngine.preview",
+      game,
+      resources: resources.map(({ path, name, type, size, file }) => ({ path, name, type, size, file }))
+    };
+    const previewUrl = resolveEnginePreviewUrl();
+    const preview = window.open(previewUrl, "vngine-preview");
+    if (!preview) return;
+    const send = () => preview.postMessage(payload, new URL(previewUrl).origin);
+    setTimeout(send, 250);
+    setTimeout(send, 750);
+    setTimeout(send, 1500);
+  },
   setImportOpen: (importOpen) => set({ importOpen }),
   setMissingOpen: (missingOpen) => set({ missingOpen }),
   loadSample: () => setAndPersist(set, { project: sampleProject, issues: validateProject(sampleProject), resources: [] })
@@ -244,4 +318,15 @@ function download(blob: Blob, filename: string) {
 
 function safeName(name: string) {
   return name.trim().replace(/[^a-z0-9_-]+/gi, "_") || "vngine";
+}
+
+function resolveEnginePreviewUrl(): string {
+  const { origin, hostname, port, pathname } = window.location;
+  if ((hostname === "127.0.0.1" || hostname === "localhost") && port === "5173") {
+    return "http://127.0.0.1:5174/?preview=1";
+  }
+  if (pathname.includes("/editor/")) {
+    return new URL("../engine/?preview=1", window.location.href).toString();
+  }
+  return `${origin}/engine/?preview=1`;
 }

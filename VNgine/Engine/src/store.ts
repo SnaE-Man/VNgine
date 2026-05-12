@@ -20,15 +20,18 @@ import {
 
 type SaveSlot = VNgineSave & { id: string };
 type StoredSaveSlot = SaveSlot & { game: VNgineGame };
+type PreviewResource = Omit<ResourceFile, "url">;
 
 type EngineStore = {
   game: VNgineGame | null;
   resources: ResourceFile[];
   state: RuntimeState | null;
   issues: ValidationIssue[];
+  previewMode: boolean;
   saveSlots: StoredSaveSlot[];
   loadGameFile: (file: File) => Promise<void>;
   loadResourceFiles: (files: FileList | File[]) => void;
+  loadPreview: (game: VNgineGame, resources: PreviewResource[]) => void;
   start: () => void;
   forward: () => void;
   back: () => void;
@@ -45,11 +48,12 @@ export const useEngineStore = create<EngineStore>((set, get) => ({
   resources: [],
   state: null,
   issues: [],
+  previewMode: false,
   saveSlots: loadSaveSlots(),
   loadGameFile: async (file) => {
     const { game, resources } = await openGameFile(file);
     const issues = validateProject(game, resources.map((resource) => resource.path));
-    set({ game, resources, state: createInitialRuntimeState(game), issues });
+    set({ game, resources, state: createInitialRuntimeState(game), issues, previewMode: false });
   },
   loadResourceFiles: (files) => {
     const game = get().game;
@@ -61,6 +65,11 @@ export const useEngineStore = create<EngineStore>((set, get) => ({
       return { path, name: file.name, type: file.type, size: file.size, file, url: URL.createObjectURL(file) };
     });
     set({ resources, issues: validateProject(game, resources.map((resource) => resource.path)) });
+  },
+  loadPreview: (game, previewResources) => {
+    const resources: ResourceFile[] = previewResources.map((resource) => ({ ...resource, url: URL.createObjectURL(resource.file) }));
+    const state = goForward(game, createInitialRuntimeState(game));
+    set({ game, resources, state, issues: validateProject(game, resources.map((resource) => resource.path)), previewMode: true });
   },
   start: () => {
     const { game, state } = get();
@@ -94,7 +103,7 @@ export const useEngineStore = create<EngineStore>((set, get) => ({
     localStorage.setItem(saveKey, JSON.stringify(next));
     set({ saveSlots: next });
   },
-  loadSave: (slot) => set({ game: slot.game, state: slot.state, resources: [], issues: validateProject(slot.game) }),
+  loadSave: (slot) => set({ game: slot.game, state: slot.state, resources: [], issues: validateProject(slot.game), previewMode: false }),
   deleteSave: (slotId) => {
     const next = get().saveSlots.filter((slot) => slot.id !== slotId);
     localStorage.setItem(saveKey, JSON.stringify(next));

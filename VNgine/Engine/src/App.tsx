@@ -6,6 +6,7 @@ import { currentViewModel, useEngineStore } from "./store";
 export function App() {
   const store = useEngineStore();
   const input = useRef<HTMLInputElement>(null);
+  const isPreview = new URL(window.location.href).searchParams.get("preview") === "1";
 
   useEffect(() => {
     const url = new URL(window.location.href);
@@ -18,7 +19,20 @@ export function App() {
       .catch(() => undefined);
   }, []);
 
+  useEffect(() => {
+    if (!isPreview) return;
+    const onMessage = (event: MessageEvent) => {
+      if (event.source !== window.opener) return;
+      if (event.data?.type !== "vngine.preview") return;
+      store.loadPreview(event.data.game, event.data.resources ?? []);
+    };
+    window.addEventListener("message", onMessage);
+    window.opener?.postMessage({ type: "vngine.preview.ready" }, "*");
+    return () => window.removeEventListener("message", onMessage);
+  }, [isPreview, store]);
+
   if (!store.game || !store.state) {
+    if (isPreview) return <PreviewWaiting />;
     return <MainMenu onOpen={() => input.current?.click()} input={<input ref={input} hidden type="file" accept=".vngame,.zip,.json" onChange={(e) => e.target.files?.[0] && store.loadGameFile(e.target.files[0])} />} />;
   }
 
@@ -64,7 +78,7 @@ function Player() {
     <main className="player">
       {imageUrl ? <img className="backdrop" src={imageUrl} /> : <div className="backdrop placeholder" />}
       <div className="topBar">
-        <strong>{game!.title}</strong>
+        <strong>{store.previewMode ? `${game!.title} - Preview` : game!.title}</strong>
         <div>
           <button onClick={store.back} disabled={state!.history.length === 0}><ArrowLeft size={16} /> Back</button>
           <button onClick={store.forward}><ArrowRight size={16} /> Forward</button>
@@ -103,6 +117,17 @@ function Player() {
       )}
 
       {missing.length > 0 && <MissingBanner missing={missing.map((issue) => issue.path || issue.message)} onLoadResources={store.loadResourceFiles} />}
+    </main>
+  );
+}
+
+function PreviewWaiting() {
+  return (
+    <main className="mainMenu">
+      <section>
+        <h1>VNgine</h1>
+        <p>Waiting for editor preview...</p>
+      </section>
     </main>
   );
 }
